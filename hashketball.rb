@@ -164,4 +164,5 @@ stats = {}
       end
     end
   end
+  stats
 end
