@@ -154,13 +154,14 @@ end
 end
 
 def player_stats(player_name)
+stats = {}
   game_hash.each do |_place, team|
     team.each do |attribute, data|
       next unless attribute == :players
 
       data.each do |data|
-        return data
+        stats << data
       end
     end
   end
-end 
+end
