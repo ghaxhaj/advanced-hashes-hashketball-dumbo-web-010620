@@ -136,3 +136,15 @@ def team_names
     team[:team_name]
   end
 end
+
+def player_numbers(player_name)
+  game_hash.each do |_place, team|
+    team.each do |attribute, data|
+      next unless attribute == :players
+
+      data.each do |player|
+        return player[:number] if player[:player_name] == player_name 
+      end 
+    end 
+  end 
+end 
