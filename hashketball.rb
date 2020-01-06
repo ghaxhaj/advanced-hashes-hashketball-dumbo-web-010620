@@ -143,8 +143,8 @@ def player_numbers(player_name)
       next unless attribute == :players
 
       data.each do |player|
-        return player[:number] if player[:player_name] == player_name 
-      end 
-    end 
-  end 
+        return player[:number] if player[:player_name] == player_name
+      end
+    end
+  end
 end 
