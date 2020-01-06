@@ -150,5 +150,5 @@ team.each do |attribute, data|
   end
 end
 end
-print result
-end 
+ result
+end
