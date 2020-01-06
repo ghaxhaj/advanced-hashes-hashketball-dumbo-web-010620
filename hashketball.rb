@@ -125,9 +125,8 @@ end
 end
 end
 
-def team_colors(sought_team_name)
+def team_colors(team_name)
   game_hash.each do |place, team|
-    team.each do |team|
-      return game_hash[place][:colors] if team[:team_name] == sought_team_name
-    end
+    return game_hash[place][:colors] if team[:team_name] == team_name
+  end
 end
